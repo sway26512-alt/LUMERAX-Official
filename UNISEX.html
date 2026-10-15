@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEN | LUMERAX</title>
+    <style>
+        .navbar {
+            background-color: black;
+            color: white;
+            border-radius: 30px;
+            padding: 10px;
+            overflow: auto;
+            font-size: 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            color: #F5F1E8;
+            padding: 10px;
+        }
+
+        .navbar a:visited {
+            color: #B8860B;
+        }
+
+        .navbar a:hover {
+            color: #FFE5A0;
+        }
+
+        .navbar li {
+            float: left;
+        }
+
+        .navbar ul {
+            text-decoration: none;
+            list-style: none;
+        }
+        .search {
+            float: right;
+            margin: 0;
+            position: relative;
+            top: -6px;
+        }
+
+        .search input {
+            padding: 8px;
+            border-radius: 20px;
+            border: 3px solid goldenrod;
+        }
+
+        .search button {
+            padding: 8px 12px;
+            border-radius: 20px;
+            border: 2px solid goldenrod;
+            background-color: black;
+            color: gold;
+        }
+        
+        .logo {
+            float: left;
+            display: block;
+            width: 120px;
+            height: 50px;
+            padding: 0;
+            margin: 0 15px 0 5px;
+        }
+
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="m-hero">
+           <nav class="navbar">
+
+        <a href="home.html" class="logo">
+            <img src="logo.png" alt="LUMERAX Logo">
+        </a>
+
+        <ul>
+
+            <li>
+                <a href="home.html">Home</a>
+            </li>
+
+            <li>
+                <a href="collections.html">Collections</a>
+            </li>
+
+            <li>
+                <a href="about.html">About</a>
+            </li>
+
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+
+        </ul>
+
+
+        <form class="search">
+
+            <input
+                type="text"
+                placeholder="Search fragrances..."
+            >
+
+            <button type="submit">
+                Search
+            </button>
+
+        </form>
+
+    </nav>
+    </section>
+</body>
+</html>

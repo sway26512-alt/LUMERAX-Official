@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collections</title>
+
+    <style>
+
+        /* ALL COLLECTIONS */
+
+        .all {
+            width: 100%;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        .all h2 {
+            font-size: 32px;
+            letter-spacing: 3px;
+            margin: 30px 0;
+        }
+
+
+        /* PERFUME CARDS */
+
+        .perfume-card {
+            display: inline-block;
+            width: 31%;
+            margin: 20px 1%;
+            text-align: center;
+            vertical-align: top;
+            box-sizing: border-box;
+        }
+
+        .perfume-card img {
+            display: block;
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+
+        .perfume-card h3 {
+            font-size: 24px;
+            letter-spacing: 2px;
+            margin: 10px 0 5px;
+        }
+
+        .perfume-card p {
+            font-size: 16px;
+            color: #B8860B;
+            letter-spacing: 1px;
+        }
+
+
+        /* CATEGORIES */
+
+        .categories {
+            font-size: 20px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode',
+                         'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            padding-left: 120px;
+            display: inline-block;
+            margin: 10px;
+        }
+
+        .categories a {
+            color: #B8860B;
+        }
+
+        .categories a:visited {
+            color: #B8860B;
+        }
+
+        .categories a:hover {
+            color: #FFE5A0;
+        }
+
+
+        /* COLLECTIONS HERO */
+
+        .c-hero {
+            background-image: url(Resized.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-color: #B8860B;
+            border: 3px solid black;
+            border-radius: 20px;
+            margin-top: 10px;
+            height: 400px;
+        }
+
+
+        /* LOGO */
+
+        .logo {
+            float: left;
+            display: block;
+            width: 120px;
+            height: 50px;
+            padding: 0;
+            margin: 0 15px 0 5px;
+        }
+
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            display: block;
+        }
+
+
+        /* NAVBAR */
+
+        .navbar {
+            background-color: black;
+            color: white;
+            border-radius: 30px;
+            padding: 10px;
+            overflow: auto;
+            font-size: 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            color: #F5F1E8;
+            padding: 10px;
+        }
+
+        .navbar a:visited {
+            color: #B8860B;
+        }
+
+        .navbar a:hover {
+            color: #FFE5A0;
+        }
+
+        .navbar li {
+            float: left;
+        }
+
+        .navbar ul {
+            text-decoration: none;
+            list-style: none;
+        }
+
+
+        /* SEARCH */
+
+        .search {
+            float: right;
+            margin: 0;
+            position: relative;
+            top: -6px;
+        }
+
+        .search input {
+            padding: 8px;
+            border-radius: 20px;
+            border: 3px solid goldenrod;
+        }
+
+        .search button {
+            padding: 8px 12px;
+            border-radius: 20px;
+            border: 2px solid goldenrod;
+            background-color: black;
+            color: gold;
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <a href="home.html" class="logo">
+            <img src="logo.png" alt="LUMERAX Logo">
+        </a>
+
+        <ul>
+
+            <li>
+                <a href="home.html">Home</a>
+            </li>
+
+            <li>
+                <a href="collections.html">Collections</a>
+            </li>
+
+            <li>
+                <a href="about.html">About</a>
+            </li>
+
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+
+        </ul>
+
+
+        <form class="search">
+
+            <input
+                type="text"
+                placeholder="Search fragrances..."
+            >
+
+            <button type="submit">
+                Search
+            </button>
+
+        </form>
+
+    </nav>
+
+
+    <!-- COLLECTIONS HERO -->
+
+    <section class="c-hero">
+    </section>
+
+
+    <!-- CATEGORIES -->
+
+    <section class="categories">
+
+        <div class="categories" id="MEN">
+            <a href="MEN.html">Men Fragrances</a>
+        </div>
+
+        <div class="categories" id="WOMEN">
+            <a href="WOMEN.html">Women Fragrances</a>
+        </div>
+
+        <div class="categories" id="UNISEX">
+            <a href="UNISEX.html">Unisex</a>
+        </div>
+
+    </section>
+
+
+    <!-- ALL COLLECTIONS -->
+
+    <section class="all">
+
+        <h2>ALL COLLECTIONS</h2>
+
+
+        <!-- MEN -->
+
+        <div class="perfume-card">
+
+            <img src="azure.jpg" alt="AZURE Perfume">
+
+            <h3>AZURE</h3>
+
+            <p>Category: Fresh / Blue — MEN</p>
+
+            <p>50ml</p>
+
+        </div>
+
+
+        <div class="perfume-card">
+
+            <img src="obsidian.jpg" alt="OBSIDIAN Perfume">
+
+            <h3>OBSIDIAN</h3>
+
+            <p>Category: Dark / Mysterious — MEN</p>
+
+            <p>50ml</p>
+
+        </div>
+
+
+        <div class="perfume-card">
+
+            <img src="zenith.jpg" alt="ZENITH Perfume">
+
+            <h3>ZENITH</h3>
+
+            <p>Category: Royal / Luxury — MEN</p>
+
+            <p>50ml</p>
+
+        </div>
+
+
+        <div class="perfume-card">
+
+            <img src="aurum.jpg" alt="AURUM Perfume">
+
+            <h3>AURUM</h3>
+
+            <p>Category: Spicy — MEN</p>
+
+            <p>50ml</p>
+
+        </div>
+
+
+        <div class="perfume-card">
+
+            <img src="phantom.jpg" alt="PHANTOM Perfume">
+
+            <h3>PHANTOM</h3>
+
+            <p>Category: Dark / Mysterious — MEN</p>
+
+            <p>50ml</p>
+
+        </div>
+
+
+        <div class="perfume-card">
+
+            <img src="timber.jpg" alt="TIMBER Perfume">
+
+            <h3>TIMBER</h3>
+
+            <p>Category: Woody — MEN</p>
+
+            <p>50ml</p>
+
+        </div>
+
+
+        <!-- WOMEN -->
+
+        <div class="perfume-card">
+
+            <img src="liora.png" alt="LIORA Perfume">
+
+            <h3>LIORA</h3>
+
+            <p>Category: Elegant — WOMEN</p>
+
+            <p>50ml</p>
+
+        </div>
+
+
+        <div class="perfume-card">
+
+            <img src="aveline.png" alt="AVELINE Perfume">
+
+            <h3>AVELINE</h3>
+
+            <p>Category: Elegant — WOMEN</p>
+
+            <p>50ml</p>
+
+        </div>
+
+
+        <div class="perfume-card">
+
+            <img src="roseveil.png" alt="ROSEVEIL Perfume">
+
+            <h3>ROSEVEIL</h3>
+
+            <p>Category: Floral — WOMEN</p>
+
+            <p>50ml</p>
+
+        </div>
+
+
+        <div class="perfume-card">
+
+            <img src="icon.png" alt="ICON Perfume">
+
+            <h3>ICON</h3>
+
+            <p>Category: Confident / Empowered — WOMEN</p>
+
+            <p>50ml</p>
+
+        </div>
+
+
+        <div class="perfume-card">
+
+            <img src="opal.png" alt="OPAL Perfume">
+
+            <h3>OPAL</h3>
+
+            <p>Category: Mysterious — WOMEN</p>
+
+            <p>50ml</p>
+
+        </div>
+
+
+        <div class="perfume-card">
+
+            <img src="phoenix.jpg" alt="PHOENIX Perfume">
+
+            <h3>PHOENIX</h3>
+
+            <p>Category: Confident / Empowered — WOMEN</p>
+
+            <p>50ml</p>
+
+        </div>
+
+
+        <div class="perfume-card">
+
+            <img src="mystique.png" alt="MYSTIQUE Perfume">
+
+            <h3>MYSTIQUE</h3>
+
+            <p>Category: Mysterious — WOMEN</p>
+
+            <p>50ml</p>
+
+        </div>
+
+
+    </section>
+
+</body>
+</html>

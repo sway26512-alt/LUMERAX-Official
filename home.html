@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LUMERAX</title>
+    <style>
+        .logo p {
+    margin: 2px;
+    font-size: 14px;
+    /* padding:2px; */
+    text-align:center;
+        }
+        .logo {
+float:left;
+display: block;
+width: 160px;
+height: 60px;
+padding:0;
+margin:-5px 15px -5px 5px;
+        }
+       
+
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            display: block;
+        }
+        .why-lumerax {
+            padding: 40px;
+            background-color: rgb(245, 243, 238);
+        }
+
+        .why-lumerax h2 {
+            text-align: center;
+        }
+
+        .why-content {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .why-image {
+            width: 50%;
+            min-height: 500px;
+            background-image: url(existance\ .png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            border-radius: 20px;
+        }
+
+        .why-text {
+            width: 50%;
+        }
+
+
+        /* SEARCH */
+
+        .search {
+            float: right;
+            margin: 0;
+            position: relative;
+            top: -6px;
+        }
+
+        .search input {
+            padding: 8px;
+            border-radius: 20px;
+            border: 3px solid goldenrod;
+        }
+
+        .search button {
+            padding: 8px 12px;
+            border-radius: 20px;
+            border: 2px solid goldenrod;
+            background-color: black;
+            color: gold;
+        }
+
+
+        /* MEANING IMAGE */
+
+        .meaning-image {
+            background-image: url(ERA\ OF\ LIGHT.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 20px;
+            height: 600px;
+        }
+
+
+        /* MEANING HEADINGS */
+
+        .meaning h2 {
+            font-family: 'Franklin Gothic Medium',
+                'Arial Narrow',
+                Arial,
+                sans-serif;
+        }
+
+        .meaning h3 {
+            font-family: 'Franklin Gothic Medium',
+                'Arial Narrow',
+                Arial,
+                sans-serif;
+        }
+
+        /* NAVBAR */
+
+        .navbar {
+            background-color: black;
+            color: white;
+            border-radius: 30px;
+            padding: 10px;
+            font-size: 20px;
+            position: sticky;
+            top: 0;
+            overflow: hidden;
+        }
+
+        .navbar a {
+            color: #F5F1E8;
+            padding: 10px;
+        }
+
+        .navbar a:visited {
+            color: #B8860B;
+        }
+
+        .navbar a:hover {
+            color: #FFE5A0;
+        }
+
+        .navbar li {
+            float: left;
+        }
+
+        .navbar ul {
+            text-decoration: none;
+            list-style: none;
+        }
+
+
+        /* GENERAL TEXT */
+
+        h1 {
+            font-size: 50px;
+            font-weight: bold;
+        }
+
+        h2 {
+            font-size: 28px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-size: 18px;
+        }
+        .hero {
+            background-image: url(perfume.png);
+            color: rgb(227, 171, 31);
+            padding: 26px;
+            margin-top: 26px;
+            height: 400px;
+            text-align: left;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        .Explore {
+            color: gold;
+            border-radius: 20px;
+            padding: 10px;
+            background-color: rgb(4, 7, 9);
+            text-decoration: none;
+            margin-top: 15px;
+            border: 3px solid goldenrod;
+            font-size: 18px;
+            font-family: 'Courier New',
+                Courier,
+                monospace;
+            font-weight: bold;
+            position: absolute;
+            bottom: 45px;
+            left: 155px;
+        }
+
+        .Explore:hover {
+            color: brown;
+        }
+
+
+        /* COLLECTIONS */
+
+        .collection-image {
+            height: 400px;
+            width: 350px;
+            border-radius: 20px;
+        }
+
+        .collection {
+            display: inline-block;
+            margin: 20px;
+            text-align: center;
+        }
+
+        .collection-box {
+            background-color: black;
+            color: gold;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 20px;
+            width: 350px;
+            height: 400px;
+            box-sizing: border-box;
+            text-align: center;
+            border: 3px solid goldenrod;
+            padding: 30px;
+            font-size: 25px;
+        }
+
+        .collection-box h3 {
+            font-size: 24px;
+            font-weight: bold;
+            font-family: 'Franklin Gothic Medium',
+                'Arial Narrow',
+                Arial,
+                sans-serif;
+        }
+
+        .collection-box p {
+            font-size: 16px;
+            font-family: 'Franklin Gothic Medium',
+                'Arial Narrow',
+                Arial,
+                sans-serif;
+        }
+
+        .collections {
+            padding: 30px;
+            text-align: center;
+            background-color: rgb(245, 243, 238);
+        }
+
+        .collection-box:hover {
+            background-color: rgb(235, 228, 228);
+        }
+
+        .collection-box:hover h3 {
+            color: rgb(18, 15, 15);
+        }
+
+        .collection-box:hover p {
+            color: black;
+        }
+
+
+        /* COLLECTION IMAGES */
+
+        #MEN {
+            background-image: url(ONYX.jpg.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        #WOMEN {
+            background-image: url(BLOOM.jpg.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        #UNISEX {
+            background-image: url(ECLIPSE.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+
+        /* MEANING SECTION */
+
+        .meaning {
+            padding: 40px;
+            background-color: white;
+        }
+
+        .meaning h2 {
+            text-align: center;
+        }
+
+        .meaning-content {
+            display: flex;
+            align-items: flex-start;
+            gap: 40px;
+        }
+.image{
+    
+}
+        .meaning-text {
+            width: 50%;
+            box-sizing: border-box;
+        }
+
+        .meaning-image {
+            width: 50%;
+            min-height: 600px;
+            box-sizing: border-box;
+        }
+
+
+        /* WHY LUMERAX TEXT */
+
+        .why-text h3 {
+            font-family: 'Franklin Gothic Medium',
+                'Arial Narrow',
+                Arial,
+                sans-serif;
+
+            font-size: 30px;
+        }
+
+        .why-text p {
+            font-size: 18px;
+            line-height: 1.7;
+        } */
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <a href="home.html" class="logo">
+            <img src="logo.png" alt="LUMERAX Logo">
+        </a>
+
+        <ul>
+
+            <li>
+                <a href="home.html">Home</a>
+            </li>
+
+            <li>
+                <a href="collections.html">Collections</a>
+            </li>
+
+            <li>
+                <a href="about.html">About</a>
+            </li>
+
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+
+        </ul>
+
+
+        <!-- SEARCH -->
+
+        <form class="search">
+
+            <input
+                type="text"
+                placeholder="Search fragrances..."
+            >
+
+            <button type="submit">
+                Search
+            </button>
+
+        </form>
+
+    </nav>
+
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <a class="Explore" href="collections.html">
+            Explore Collections
+        </a>
+    </section>
+    <section class="collections">
+
+        <h2>Our Collections</h2>
+        <div class="collection">
+            <div
+                class="collection-image"
+                id="MEN">
+            </div>
+
+            <h3>MEN</h3>
+        </div>
+        <div class="collection">
+            <div
+                class="collection-image"
+                id="WOMEN">
+            </div>
+            <h3>WOMEN</h3>
+
+        </div>
+
+
+        <div class="collection">
+
+            <div
+                class="collection-image"
+                id="UNISEX">
+            </div>
+
+            <h3>UNISEX</h3>
+
+        </div>
+
+
+    </section>
+
+
+    <section class="meaning">
+
+        <h2>THE MEANING BEHIND LUMERAX</h2>
+
+
+        <div class="meaning-content">
+
+
+            <div class="meaning-text">
+
+                <h3>
+                    What does LUMERAX mean?
+                </h3>
+
+
+                <p>
+
+                    The name LUMERAX was born from a desire to turn disappointment into something meaningful—a symbol of hope, light, and new beginnings.
+
+                    <br><br>
+
+                    Inspired by the ideas of light, hope, and a new era, LUMERAX represents a future beyond limitations and discouragement; a future shaped by confidence, growth, and possibility.
+
+                    <br><br>
+
+                    <strong>
+                        LUMERAX means “An Era of Light.”
+                    </strong>
+
+                    <br><br>
+
+                    It represents leaving behind darkness and stepping forward into a new chapter with purpose, confidence, and hope. It is a reminder that even after difficult endings, a brighter beginning can still emerge.
+
+                    <br><br>
+
+                    The name also reflects our belief that exceptional fragrance and luxury experiences should not be reserved for only a few. LUMERAX exists to bridge the gap between luxury and accessibility, bringing together quality, craftsmanship, elegance, and meaning.
+
+                    <br><br>
+
+                    When people hear LUMERAX, we want them to feel inspired to move forward, embrace growth, and believe in the possibility of a brighter chapter.
+
+                    <br><br>
+
+                    <strong>
+                        Every ending can become the beginning of a brighter chapter.
+                    </strong>
+
+                    <br><br>
+
+                    <strong>
+                        — LUMERAX Philosophy
+                    </strong>
+
+                </p>
+
+            </div>
+
+
+            <div class="meaning-image">
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <section class="why-lumerax">
+
+        <h2>WHY LUMERAX EXISTS</h2>
+
+
+        <div class="why-content">
+
+
+            <div class="why-image">
+            </div>
+
+
+            <div class="why-text">
+
+                <h3>
+                    Luxury Should Be Experienced, Not Excluded
+                </h3>
+
+
+                <p>
+
+                    LUMERAX was created to make the experience of luxury fragrance more accessible without compromising on quality, elegance, or meaning.
+
+                    <br><br>
+
+                    The fragrance industry is often divided between premium fragrances that are financially out of reach for many and mass-market products that prioritize affordability over craftsmanship and experience.
+
+                    <br><br>
+
+                    <strong>
+                        LUMERAX exists to bridge that gap.
+                    </strong>
+
+                    We believe luxury should not be defined solely by its price, but by the emotions it evokes, the memories it creates, the confidence it inspires, and the care invested in every detail.
+
+                    Every LUMERAX fragrance is created to bring together
+
+                    <strong>
+                        exceptional scent, refined presentation, thoughtful storytelling, and meaningful experiences
+                    </strong>
+
+                    —while remaining accessible to those who value quality and craftsmanship.
+
+                    <br><br>
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+</body>
+</html>

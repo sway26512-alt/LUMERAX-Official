@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Practice</title>
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+
+            /* Direction */
+            flex-direction: row;
+
+            /* Wrapping */
+            flex-wrap: wrap;
+
+            /* Shorthand for direction + wrap */
+            /* flex-flow: row wrap; */
+
+            /* Horizontal alignment */
+            justify-content: space-evenly;
+
+            /* Vertical alignment */
+            align-items: center;
+            border: 3px solid black;
+            padding: 20px;
+           /* align-items: flex-end; */
+            height: 250px;
+        }
+
+        .box {
+            width: 150px;
+            height: 100px;
+            background-color: rgb(128, 131, 143);
+            border: 2px solid black;
+            border-radius: 14px;
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* align-items: flex-end; */
+        }
+        #box1{
+            background-color:rgb(166, 209, 166);
+            order:2;
+            /* flex-grow:2;  */
+            flex-shrink:1;
+        }
+        #box2{
+            align-self:flex-start
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Flexbox Practice</h1>
+
+    <div class="container">
+
+        <div class="box" id="box1">BOX 1</div>
+
+        <div class="box" id="box2">BOX 2</div>
+
+        <div class="box" id="box3">BOX 3</div>
+
+        <div class="box" id="box4">BOX 4</div>
+
+        <div class="box" id="box5">BOX 5</div>
+
+        <div class="box" id="box6">BOX 6</div>
+
+    </div>
+
+</body>
+</html>
